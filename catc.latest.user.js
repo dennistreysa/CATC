@@ -3,7 +3,7 @@
 // @author 		dennistreysa
 // @oujs:author	dennistreysa
 // @copyright   2015, dennistreysa
-// @version 	0.0.1.0
+// @version 	0.0.1.1
 // @copyright	2015, dennistreysa
 // @icon		https://raw.githubusercontent.com/dennistreysa/CATC/master/res/logo.png
 // @description	This script enables the functionality to change the coordinates of every cachetype
@@ -25,7 +25,6 @@ if($){
 
 			// Check if coords are original or already changed
 			if(!$coords.parent().is("a")){
-				console.log("CATC : Coordinates are unchanged!");
 
 				// Set up userdefined coords
 				var userDefinedCoords = {"status":"success","data":{"isUserDefined":false,"oldLatLngDisplay":$coords.find("#uxLatLon").text()}};
@@ -84,11 +83,7 @@ if($){
 					e.preventDefault();
 					return false;
 				});
-			}else{
-				console.log("CATC : Coordinates are already changed!");
 			}
-		}else{
-			console.log("CATC : Could not find coordinates container!");
 		}
 	});
 }
