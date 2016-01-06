@@ -2,14 +2,15 @@
 // @name 		Correct All The Coordinates
 // @author 		dennistreysa
 // @oujs:author	dennistreysa
-// @copyright   2015, dennistreysa
-// @version 	0.0.1.1
-// @copyright	2015, dennistreysa
+// @copyright   2015-2016, dennistreysa
+// @version 	0.0.1.2
+// @copyright	2015-2016, dennistreysa
 // @icon		https://raw.githubusercontent.com/dennistreysa/CATC/master/res/logo.png
 // @description	This script enables the functionality to change the coordinates of every cachetype
 // @updateURL	https://raw.githubusercontent.com/dennistreysa/CATC/master/catc.latest.user.js
 // @downloadURL	https://raw.githubusercontent.com/dennistreysa/CATC/master/catc.latest.user.js
 // @include		*.geocaching.com/seek/cache_details.aspx*
+// @include		*.geocaching.com/geocache/GC*
 // @noframes
 // @grant 		none
 // ==/UserScript==
