@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name 		Correct All The Coordinates
+// @namespace	http://www.dennistreysa.de
 // @author 		dennistreysa
 // @oujs:author	dennistreysa
-// @copyright   2015-2016, dennistreysa
-// @version 	0.0.1.3
+// @copyright	2015-2016, dennistreysa
+// @version 	1.0
 // @icon		https://raw.githubusercontent.com/dennistreysa/CATC/master/res/logo.png
 // @description	This script enables the functionality to change the coordinates of every cachetype
 // @updateURL	https://raw.githubusercontent.com/dennistreysa/CATC/master/catc.latest.user.js
@@ -14,9 +15,10 @@
 // @grant 		none
 // ==/UserScript==
 
-// Check if jQuery is present
-if($){
-	$(document).ready(function(){
+var CATC = {
+
+	onStart : function(){
+
 		// Find coords container
 		var $CacheInformationTable = $("#ctl00_ContentBody_CacheInformationTable").find(".NoBottomSpacing :first");
 		var $coords = $CacheInformationTable.find("strong :first");
@@ -85,13 +87,9 @@ if($){
 				});
 			}
 		}
-	});
-}
+	}
+};
 
-/*
- * Version-History:
- *
- * v0.0.1 (2015-11-12)
- *		- initial release
- *
- */
+$(document).ready(function(){
+	CATC.onStart();
+});
